@@ -1,1 +1,1 @@
-From alpine
+FROM ubuntu:latest
