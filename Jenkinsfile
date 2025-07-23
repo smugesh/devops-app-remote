@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        git branch: 'main' url:'git@github.com:smugesh/devops-app-remote.git'  // Replace with your actual GitHub URL
+                        git branch: 'main', url:'git@github.com:smugesh/devops-app-remote.git'  // Replace with your actual GitHub URL
                     } catch (Exception e) {
                         error "Failed to checkout code: ${e.message}"
                     }
