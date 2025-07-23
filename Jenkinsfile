@@ -27,7 +27,7 @@ pipeline {
         stage('Package Artifact') {
             steps {
                 echo 'Packaging artifact'
-                sh 'tar -czf app.tar.gz your_directory_or_files'  // Adjust as needed
+                sh 'tar -czf app.tar.gz .'  // Adjust as needed
             }
         }
     }
